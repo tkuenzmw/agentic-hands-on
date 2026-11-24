@@ -1,15 +1,6 @@
 # 1: What changes when an AI agent can use MATLAB?
-You
- │
- ▼
-Codex
- │
- ├── read code
- ├── edit files
- └── use tools
-       │
-       ▼
-     MATLAB
+
+You --> Codex <-- read code, edit files, use tools --> MATLAB
 
 This is more than code generation. The agent can inspect the project, change it, run MATLAB, observe the result and continue working.
 
@@ -80,21 +71,10 @@ Delegate execution. Don't delegate scientific judgement.
 
 "The segmentation doesn't look good. Help me understand which parameter I should adjust."
 
-# 7: Summary
+# 7: Summary / take-home-messages
+The agentic workflow goes a bit like this...
 
-        ASK
-         ↓
-      INSPECT
-         ↓
-        RUN
-         ↓
-       VERIFY
-         ↓
-   change / continue
-         └─────────┐
-                   ↓
-                  ASK ...
+ASK --> INSPECT --> RUN --> VERIFY --> change / continue --> ask ...
 
-Tell the agent when you want it to stop and ask you.
-
-Judge claims from evidence, not from how confidently the agent reports success. We all know how good language models are at _sounding_ correct - even if they are completely wrong!
+! Tell the agent when you want it to stop and ask you.
+! Judge claims from evidence, not from how confidently the agent reports success. We all know how good language models are at _sounding_ correct - even if they are completely wrong!
